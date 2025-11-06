@@ -62,8 +62,6 @@ BI_Searchable (인터페이스) 및 PawnSensing (컴포넌트)를 활용, 0.5초
 
 플레이어를 찾으면 TargetActor 블랙보드 키에 저장합니다.
 
-버그 해결: 플레이어를 1프레임 놓치면 TargetActor가 즉시 삭제(Clear)되어 추적을 포기하는 버그를, Clear 노드 앞에 **Delay (15초)**를 추가하여 AI에게 '기억 시간'을 부여함으로써 해결했습니다.
-
 AI 행동 분기 (Behavior Tree Logic):
 
 속도 조절: BTT_SetSpeed (커스텀 태스크)를 제작, '추적 상태'일 때는 600(뛰기), '순찰 상태'일 때는 150(걷기)으로 Max Walk Speed를 동적 변경합니다.
